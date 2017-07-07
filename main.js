@@ -1,8 +1,13 @@
+'use strict'
 const electron = require('electron')
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
+const server = require('./resources/app')
+
+const locals = {/* ...*/};
+const pug = require('electron-pug')({pretty: true}, locals);
 
 const path = require('path')
 const url = require('url')
@@ -16,7 +21,9 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
   // and load the index.html of the app.
-  mainWindow.loadURL(url.format({
+  //mainWindow.loadURL(__dirname + '/index.html')
+
+    mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
     slashes: true

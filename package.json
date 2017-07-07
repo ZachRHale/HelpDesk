@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager ./resources/app --all --out ~/Desktop/Stuff --version 0.30.2"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,6 +18,13 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "bootstrap": "^3.3.7",
+    "electron": "~1.6.2",
+    "electron-packager": "^8.7.2",
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2"
+  },
+  "dependencies": {
+    "electron-pug": "^1.5.1"
   }
 }
