@@ -1,7 +1,8 @@
 {
-  "name": "electron-quick-start",
+  "name": "helpdeskrequests",
+  "productName": "Help Desk Requests",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Project to create a help desk ticket system",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -20,11 +21,13 @@
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "electron": "~1.6.2",
-    "electron-packager": "^8.7.2",
-    "express": "^4.15.3",
-    "pug": "^2.0.0-rc.2"
+    "electron-packager": "^8.7.2"
   },
   "dependencies": {
-    "electron-pug": "^1.5.1"
+    "electron-json-storage": "^3.0.6",
+    "electron-pug": "^1.5.1",
+    "express": "^4.15.3",
+    "guid": "0.0.12",
+    "pug": "^2.0.0-rc.2"
   }
 }
