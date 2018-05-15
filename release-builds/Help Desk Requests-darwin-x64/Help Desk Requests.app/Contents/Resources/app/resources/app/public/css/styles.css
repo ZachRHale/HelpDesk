@@ -1,7 +1,56 @@
-.whatup {
-    color:red
-}
 
 .container {
-    height:600px;
+    height:400px;
+}
+
+.col-md-4 {
+    border:1px solid black;
+
+}
+
+#alltickets th {
+    text-align:center;
+}
+
+#opentickets th {
+    text-align:center;
+}
+
+.inputfields {
+    margin:0 10px;
+    padding-top:20px
+}
+
+#create textarea {
+    height:200px;
+    width:400px;
+}
+
+#create input {
+    text-align:center;
+}
+
+footer {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:white
+}
+
+.incomplete-table {
+    margin-bottom: 100px;
+}
+
+.modal-content {
+    padding:20px;
+}
+
+.modal-content p {
+    padding:10px;
+}
+
+#opentickets textarea {
+    height:200px;
+    width:400px;
 }

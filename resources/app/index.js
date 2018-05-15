@@ -22,11 +22,11 @@ var Ticket = require('./models/Ticket')
 //Routing -----
 //-------------
 app.get('/', function(req, res){
-    res.render(__dirname + '/views/index', { title: 'Hey', message: 'Hello there!'})
+    res.render(__dirname + '/views/index', {})
 });
 
 app.get('/create', function(req,res){
-    res.render(__dirname + '/views/create', { title: 'Hey', message: 'Hello there!'})
+    res.render(__dirname + '/views/create', {})
 });
 
 app.post('/create', function(req, res){
